@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: azure;
+}
+.container{
+    /* background-color: aqua; */
+    width: 420px;
+    max-width: 100%;
+    height: 90vh;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 50px;
+}
+.screen{
+    /* background-color: aquamarine; */
+    height: 30%;
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight:800;
+}
+.buttons{
+    height: 70%;
+    padding: 10px;
+    padding-top: 30px;
+    background-color: rgb(246, 247, 247);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+;
+    
+}
+button{
+    height: 2.5rem;
+    width: 70px;
+    margin-left: 5px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px rgb(212, 212, 212);
+    font-size: 1.3rem;
+    color:rgb(64, 63, 63) ;
+    cursor: pointer;
+}
+.equal-btn{
+    background-color: aqua;
+}
+#input{
+    max-width: 100%;
+    height: 50%;
+    padding-right: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    position: relative;
+   
+
+}
+#input::after{
+    position: absolute;
+    content: "|";
+    font-size: 25px;
+    top: 2px;
+    animation: blink 2s infinite;
+}
+@keyframes blink {
+    0%,50%,100%{
+        opacity:1;
+    }
+    25%,75%{
+        opacity: 0;
+    }
+}
+#output{
+    height: 50%;
+    padding-right: 10px;
+}
